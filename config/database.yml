@@ -13,8 +13,8 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: ENV['TECHBLOG_DATABASE_USERNAME']
-  password: ENV['TECHBLOG_DATABASE_PASSWORD']
+  username: <%= ENV['TECHBLOG_DATABASE_USERNAME'] %>
+  password: <%= ENV['TECHBLOG_DATABASE_PASSWORD'] %>
   socket: /var/run/mysqld/mysqld.sock
 
 development:

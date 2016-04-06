@@ -1,5 +1,23 @@
 source 'https://rubygems.org'
 
+# Use PUMA as the app server
+gem 'puma'
+# Use Capistrano for deployment
+group :development do
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-rbenv-install'
+  gem 'capistrano-rbenv-vars'
+  gem 'capistrano-bundler'
+  gem 'capistrano-ssh-doctor'
+  gem 'capistrano3-nginx'
+  gem 'capistrano3-puma'
+  gem 'capistrano-upload-config'
+  gem 'capistrano-rails-console'
+  gem 'capistrano-rails-tail-log'
+  gem 'capistrano-rails-collection'
+end
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
@@ -44,4 +62,3 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-
